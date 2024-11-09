@@ -1,50 +1,51 @@
-# Welcome to your Expo app 👋
+# Harry Potter DB
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Welcome to the Harry Potter Database project! This project aims to provide a comprehensive database of all things related to the Harry Potter universe.
 
-## Get started
+## Table of Contents
 
-1. Install dependencies
+- [Harry Potter DB](#harry-potter-db)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Features](#features)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [License](#license)
 
-   ```bash
-   npm install
-   ```
+## Introduction
 
-2. Start the app
+The Harry Potter Database is a project designed to catalog and provide information on characters, spells, locations, and other elements from the Harry Potter series.
 
-   ```bash
-    npx expo start
-   ```
+## Features
 
-In the output, you'll find options to open the app in a
+- Detailed information on characters
+- Comprehensive list of spells
+- Locations and their descriptions
+- Search functionality
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Installation
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+To install the project, clone the repository and install the necessary dependencies:
 
 ```bash
-npm run reset-project
+git clone https://github.com/yourusername/harry-potter-db.git
+cd harry-potter-db
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Usage
 
-## Learn more
+To start the application, run:
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+npm start
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Contributing
 
-## Join the community
+We welcome contributions! Please read our [contributing guidelines](CONTRIBUTING.md) for more details.
 
-Join our community of developers creating universal apps.
+## License
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
