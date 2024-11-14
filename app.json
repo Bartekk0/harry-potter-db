@@ -2,13 +2,15 @@
   "expo": {
     "name": "harry-potter-db",
     "slug": "harry-potter-db",
+    "jsEngine": "hermes",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/hp-icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/images/hp-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,7 +19,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/hp-icon.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.bartekw.harrypotterdb"
@@ -25,11 +27,20 @@
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/hp-icon.png"
     },
     "plugins": [
       "expo-router",
-      "expo-font"
+      "expo-font",
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/Manrope-ExtraLight.ttf",
+            "./assets/fonts/Harry-Potter.ttf"
+          ]
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
