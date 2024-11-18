@@ -3,85 +3,87 @@
  * Each house has a set of colors for different UI elements such as primary, secondary, tertiary, quaternary, quinary, background, and text.
  **/
 
-export const Colors = {
+const Colors = {
   gryffindor: {
     light: {
-      primary: "#740001",
-      secondary: "#eeba30",
-      tertiary: "#d3a625",
-      quaternary: "#000000",
-      quinary: "#ffffff",
-      bg: "#f7f7f7",
-      text: "#000000",
+      primary: "#D6A7A1", // lighter red
+      secondary: "#F3CFBA", // lighter gold
+      tertiary: "#EAE0DA", // complementary light beige
+      quaternary: "#FFE0B2", // soft warm tone
+      quinary: "#FFF4E3", // pale yellow highlight
+      bg: "#FFF8E7", // light background
+      text: "#993333", // warm red for text
     },
     dark: {
-      primary: "#740001",
-      secondary: "#eeba30",
-      tertiary: "#d3a625",
-      quaternary: "#000000",
-      quinary: "#ffffff",
-      bg: "#000000",
-      text: "#ffffff",
-    },
-  },
-  ravenclaw: {
-    light: {
-      primary: "#222f5b",
-      secondary: "#946b2d",
-      tertiary: "#000000",
-      quaternary: "#946b2d",
-      quinary: "#ffffff",
-      bg: "#f7f7f7",
-      text: "#000000",
-    },
-    dark: {
-      primary: "#222f5b",
-      secondary: "#946b2d",
-      tertiary: "#000000",
-      quaternary: "#946b2d",
-      quinary: "#ffffff",
-      bg: "#000000",
-      text: "#ffffff",
+      primary: "#9C1C00", // deep crimson red
+      secondary: "#D4AF37", // rich gold
+      tertiary: "#B66D4C", // muted brownish-red
+      quaternary: "#735F3F", // darker complementary tone
+      quinary: "#493E2B", // accent tone
+      bg: "#2A1F1A", // dark brownish background
+      text: "#FFFFFF", // white text for contrast
     },
   },
   hufflepuff: {
     light: {
-      primary: "#000000",
-      secondary: "#eeba30",
-      tertiary: "#000000",
-      quaternary: "#000000",
-      quinary: "#ffffff",
-      bg: "#f7f7f7",
-      text: "#000000",
+      primary: "#FFF4B2", // pale yellow
+      secondary: "#F3E8D8", // creamy beige
+      tertiary: "#E3D9AA", // light golden
+      quaternary: "#DAD5C0", // soft complementary gray
+      quinary: "#F8F3E5", // subtle yellow highlight
+      bg: "#FDFBE5", // warm background
+      text: "#997A00", // warm brown text
     },
     dark: {
-      primary: "#000000",
-      secondary: "#eeba30",
-      tertiary: "#000000",
-      quaternary: "#000000",
-      quinary: "#ffffff",
-      bg: "#000000",
-      text: "#ffffff",
+      primary: "#FFBF00", // bold yellow
+      secondary: "#8C7B66", // muted brown
+      tertiary: "#B08D57", // golden brown
+      quaternary: "#7B6747", // darker complementary tone
+      quinary: "#4A402F", // deep accent tone
+      bg: "#201F1C", // very dark background
+      text: "#FFFFFF", // white text for contrast
+    },
+  },
+  ravenclaw: {
+    light: {
+      primary: "#AAC4E6", // pale blue
+      secondary: "#C4C4C4", // light silver
+      tertiary: "#D9EBF2", // very light blue
+      quaternary: "#BCC4D4", // soft grayish blue
+      quinary: "#F3F8FA", // pale highlight
+      bg: "#F0F5FA", // light background
+      text: "#004080", // muted navy
+    },
+    dark: {
+      primary: "#0E1A40", // dark navy
+      secondary: "#606B82", // muted steel gray
+      tertiary: "#2E3C54", // darker blue-gray
+      quaternary: "#1A2433", // deep complementary tone
+      quinary: "#101822", // accent tone
+      bg: "#0A0E14", // very dark background
+      text: "#FFFFFF", // white text for contrast
     },
   },
   slytherin: {
     light: {
-      primary: "#1a472a",
-      secondary: "#aaaaaa",
-      tertiary: "#000000",
-      quaternary: "#aaaaaa",
-      quinary: "#ffffff",
-      bg: "#f7f7f7",
-      text: "#000000",
+      primary: "#A8C2B7", // pale green
+      secondary: "#C8D4C3", // muted light green-gray
+      tertiary: "#E5F2E5", // light mint
+      quaternary: "#D4E2D1", // muted complementary tone
+      quinary: "#F2F8F2", // pale green highlight
+      bg: "#EAF7EA", // light background
+      text: "#006633", // dark green
     },
     dark: {
-      primary: "#1a472a",
-      secondary: "#aaaaaa",
-      tertiary: "#000000",
-      quaternary: "#aaaaaa",
-      quinary: "#ffffff",
-      bg: "#000000",
-      text: "#ffffff",
+      primary: "#115740", // deep green
+      secondary: "#4A6056", // dark muted green-gray
+      tertiary: "#283F37", // dark forest green
+      quaternary: "#1E2F27", // deep complementary tone
+      quinary: "#0C1E18", // accent tone
+      bg: "#081210", // very dark background
+      text: "#FFFFFF", // white text for contrast
     },
   },
 };
+
+export default Colors;

@@ -7,9 +7,6 @@ export const GlobalStyles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "400",
   },
-  bg: {
-    backgroundColor: "white",
-  },
 });
 
-setCustomText({ style: { fontFamily: "Manrope" } });
+setCustomText({ style: GlobalStyles.font });
