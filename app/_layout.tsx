@@ -1,4 +1,4 @@
-import { Slot } from "expo-router";
+import { Slot, Stack } from "expo-router";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
@@ -7,7 +7,7 @@ SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const [loaded, error] = useFonts({
-      Manrope: require("../assets/fonts/Manrope-ExtraLight.ttf"),
+    Manrope: require("../assets/fonts/Manrope-ExtraLight.ttf"),
   });
 
   useEffect(() => {
@@ -19,5 +19,14 @@ export default function RootLayout() {
   if (!loaded && !error) {
     return null;
   }
-  return <Slot />;
+  return (
+    <Stack
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
+      <Stack.Screen name="index" options={{ title: "Home" }} />
+      <Stack.Screen name="(browser)" options={{ title: "Browser" }} />
+    </Stack>
+  );
 }
