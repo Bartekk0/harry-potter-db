@@ -1,7 +1,7 @@
 # Harry Potter DB
 
 Welcome to the Harry Potter Database project! This project aims to provide a comprehensive database of all things related to the Harry Potter universe.
-
+TRAGIEDIA
 ## Table of Contents
 <!-- 
 - [Harry Potter DB](#harry-potter-db)
