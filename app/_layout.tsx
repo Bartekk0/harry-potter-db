@@ -2,6 +2,8 @@ import { Slot, Stack } from "expo-router";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
+import { GlobalProvider, useGlobalContext } from "@/components/globalContext";
+import GlobalStylesProvider from "@/components/GlobalStyles";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -20,13 +22,18 @@ export default function RootLayout() {
     return null;
   }
   return (
-    <Stack
-      screenOptions={{
-        headerShown: false,
-      }}
-    >
-      <Stack.Screen name="index" options={{ title: "Home" }} />
-      <Stack.Screen name="(browser)" options={{ title: "Browser" }} />
-    </Stack>
+    <GlobalProvider>
+      <GlobalStylesProvider />
+      <Stack
+        screenOptions={{
+          headerShown: false,
+        }}
+        initialRouteName="index"
+      >
+        <Stack.Screen name="index" options={{ title: "Choose your house" }} />
+        <Stack.Screen name="main" options={{ title: "Home" }} />
+        <Stack.Screen name="(browser)" options={{ title: "Browser" }} />
+      </Stack>
+    </GlobalProvider>
   );
 }

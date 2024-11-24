@@ -1,6 +1,8 @@
 import { Link, LinkProps } from "expo-router";
 import React from "react";
 import { Text, StyleSheet, Dimensions, View, Pressable } from "react-native";
+import CustomText from "@/components/customComponents/customText";
+import CustomPressable from "@/components/customComponents/customPressable";
 
 export default function Button({
   title,
@@ -10,9 +12,13 @@ export default function Button({
   setVisible: (visible: boolean) => void;
 }) {
   return (
-    <Pressable onPress={() => setVisible(true)} style={styles.button}>
-      <Text style={styles.text}>{title}</Text>
-    </Pressable>
+    <CustomPressable
+      onPress={() => setVisible(true)}
+      style={styles.button}
+      color="secondary"
+    >
+      <CustomText>{title}</CustomText>
+    </CustomPressable>
   );
 }
 
@@ -21,12 +27,10 @@ const styles = StyleSheet.create({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    flexShrink: 0,
     width: "49%",
-    borderRadius: 5,
+    borderRadius: 10,
     textAlign: "center",
     padding: 10,
-    backgroundColor: "#ddd",
+    marginTop: 30,
   },
-  text: {},
 });

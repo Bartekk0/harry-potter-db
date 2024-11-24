@@ -1,0 +1,16 @@
+[
+  {
+    "url": "https://hp-api.herokuapp.com/api",
+    "characters": { "path": "/characters", "name": "name" }
+  },
+  {
+    "url": "https://potterapi-fedeperin.vercel.app/en"
+  },
+  {
+    "url": "https://api.potterdb.com/v1/"
+  },
+  {
+    "url": "https://wizard-world-api.herokuapp.com/",
+    "characters": { "path": "/wizards", "name": "name" }
+  }
+]

@@ -2,7 +2,6 @@
  * An object representing the color schemes for the four Hogwarts houses in both light and dark themes.
  * Each house has a set of colors for different UI elements such as primary, secondary, tertiary, quaternary, quinary, background, and text.
  **/
-
 const Colors = {
   gryffindor: {
     light: {
@@ -83,7 +82,18 @@ const Colors = {
       bg: "#081210", // very dark background
       text: "#FFFFFF", // white text for contrast
     },
+    "": {},
   },
 };
+
+export type ColorType =
+  | "text"
+  | "primary"
+  | "secondary"
+  | "tertiary"
+  | "quinary"
+  | "quaternary"
+  | "text"
+  | "bg";
 
 export default Colors;
